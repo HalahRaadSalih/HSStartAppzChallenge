@@ -39,6 +39,7 @@
     
     self.imageView = [[UIImageView alloc] init];
     self.imageView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    self.imageView.userInteractionEnabled = YES;
     [self addSubview:self.imageView];
 }
 
