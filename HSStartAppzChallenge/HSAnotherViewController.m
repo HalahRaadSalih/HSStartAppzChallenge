@@ -7,7 +7,19 @@
 //
 
 #import "HSAnotherViewController.h"
+#import "HSSomeView.h"
+@interface HSAnotherViewController ()
+
+@property (nonatomic, readwrite) HSSomeView *someView;
+@end
 
 @implementation HSAnotherViewController
 
+-(void) loadView{
+    [super loadView];
+    
+    self.view = [[HSSomeView alloc] init];
+    self.someView = (HSSomeView*) self.view;
+    
+}
 @end

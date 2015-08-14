@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class HSSomeView;
 @interface HSAnotherViewController : UIViewController
 
+@property (nonatomic, readonly) HSSomeView *someView;
 @end
