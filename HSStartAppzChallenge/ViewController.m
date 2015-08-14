@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HSFormView.h"
+#import "HSAnotherViewController.h"
 
 @interface ViewController ()
 
@@ -24,17 +25,13 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
     [self.formView.submitButton addTarget:self action:@selector(submitButtonTapped) forControlEvents:UIControlEventTouchUpInside];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 -(void)submitButtonTapped{
-    NSLog(@"button tapped");
+
+    HSAnotherViewController *anotherViewController = [[HSAnotherViewController alloc] init];
+    [self.navigationController pushViewController:anotherViewController animated:NO];
 }
 @end
