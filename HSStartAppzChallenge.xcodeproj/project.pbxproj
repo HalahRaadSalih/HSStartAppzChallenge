@@ -18,6 +18,8 @@
 		2B4576F21B7E5E2C00A30AAD /* HSvalidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576F11B7E5E2C00A30AAD /* HSvalidator.m */; };
 		2B4576F61B7E614300A30AAD /* UIAlertView+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576F51B7E614300A30AAD /* UIAlertView+Alerts.m */; };
 		2B4576FA1B7E622900A30AAD /* HSFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576F91B7E622900A30AAD /* HSFormView.m */; };
+		2B4576FD1B7E71AA00A30AAD /* HSAnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576FC1B7E71AA00A30AAD /* HSAnotherViewController.m */; };
+		2B4577031B7E725A00A30AAD /* HSSomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4577021B7E725A00A30AAD /* HSSomeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		2B4576F51B7E614300A30AAD /* UIAlertView+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Alerts.m"; sourceTree = "<group>"; };
 		2B4576F81B7E622900A30AAD /* HSFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFormView.h; sourceTree = "<group>"; };
 		2B4576F91B7E622900A30AAD /* HSFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFormView.m; sourceTree = "<group>"; };
+		2B4576FB1B7E71AA00A30AAD /* HSAnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSAnotherViewController.h; sourceTree = "<group>"; };
+		2B4576FC1B7E71AA00A30AAD /* HSAnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSAnotherViewController.m; sourceTree = "<group>"; };
+		2B4577011B7E725A00A30AAD /* HSSomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSomeView.h; sourceTree = "<group>"; };
+		2B4577021B7E725A00A30AAD /* HSSomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSomeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,8 @@
 			children = (
 				2B4576C41B7E2FA900A30AAD /* ViewController.h */,
 				2B4576C51B7E2FA900A30AAD /* ViewController.m */,
+				2B4576FB1B7E71AA00A30AAD /* HSAnotherViewController.h */,
+				2B4576FC1B7E71AA00A30AAD /* HSAnotherViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -193,6 +201,8 @@
 			children = (
 				2B4576F81B7E622900A30AAD /* HSFormView.h */,
 				2B4576F91B7E622900A30AAD /* HSFormView.m */,
+				2B4577011B7E725A00A30AAD /* HSSomeView.h */,
+				2B4577021B7E725A00A30AAD /* HSSomeView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -301,9 +311,11 @@
 				2B4576EA1B7E556900A30AAD /* HSUser.m in Sources */,
 				2B4576F61B7E614300A30AAD /* UIAlertView+Alerts.m in Sources */,
 				2B4576C31B7E2FA900A30AAD /* AppDelegate.m in Sources */,
+				2B4577031B7E725A00A30AAD /* HSSomeView.m in Sources */,
 				2B4576F21B7E5E2C00A30AAD /* HSvalidator.m in Sources */,
 				2B4576C01B7E2FA900A30AAD /* main.m in Sources */,
 				2B4576EE1B7E577400A30AAD /* HSUserModelView.m in Sources */,
+				2B4576FD1B7E71AA00A30AAD /* HSAnotherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
