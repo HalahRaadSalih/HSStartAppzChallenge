@@ -10,10 +10,9 @@
 		2B4576C01B7E2FA900A30AAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576BF1B7E2FA900A30AAD /* main.m */; };
 		2B4576C31B7E2FA900A30AAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576C21B7E2FA900A30AAD /* AppDelegate.m */; };
 		2B4576C61B7E2FA900A30AAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576C51B7E2FA900A30AAD /* ViewController.m */; };
-		2B4576C91B7E2FA900A30AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4576C71B7E2FA900A30AAD /* Main.storyboard */; };
 		2B4576CB1B7E2FA900A30AAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4576CA1B7E2FA900A30AAD /* Images.xcassets */; };
-		2B4576CE1B7E2FA900A30AAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B4576CC1B7E2FA900A30AAD /* LaunchScreen.xib */; };
 		2B4576DA1B7E2FA900A30AAD /* HSStartAppzChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576D91B7E2FA900A30AAD /* HSStartAppzChallengeTests.m */; };
+		2B4576E41B7E335A00A30AAD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4576E31B7E335A00A30AAD /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +33,11 @@
 		2B4576C21B7E2FA900A30AAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2B4576C41B7E2FA900A30AAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2B4576C51B7E2FA900A30AAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2B4576C81B7E2FA900A30AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B4576CA1B7E2FA900A30AAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2B4576CD1B7E2FA900A30AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2B4576D31B7E2FA900A30AAD /* HSStartAppzChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSStartAppzChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4576D81B7E2FA900A30AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4576D91B7E2FA900A30AAD /* HSStartAppzChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSStartAppzChallengeTests.m; sourceTree = "<group>"; };
+		2B4576E31B7E335A00A30AAD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +61,7 @@
 		2B4576B11B7E2FA900A30AAD = {
 			isa = PBXGroup;
 			children = (
+				2B4576E31B7E335A00A30AAD /* Default-568h@2x.png */,
 				2B4576BC1B7E2FA900A30AAD /* HSStartAppzChallenge */,
 				2B4576D61B7E2FA900A30AAD /* HSStartAppzChallengeTests */,
 				2B4576BB1B7E2FA900A30AAD /* Products */,
@@ -81,13 +80,8 @@
 		2B4576BC1B7E2FA900A30AAD /* HSStartAppzChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				2B4576C11B7E2FA900A30AAD /* AppDelegate.h */,
-				2B4576C21B7E2FA900A30AAD /* AppDelegate.m */,
-				2B4576C41B7E2FA900A30AAD /* ViewController.h */,
-				2B4576C51B7E2FA900A30AAD /* ViewController.m */,
-				2B4576C71B7E2FA900A30AAD /* Main.storyboard */,
-				2B4576CA1B7E2FA900A30AAD /* Images.xcassets */,
-				2B4576CC1B7E2FA900A30AAD /* LaunchScreen.xib */,
+				2B4576E51B7E338C00A30AAD /* AppDelegate */,
+				2B4576E61B7E339800A30AAD /* ViewController */,
 				2B4576BD1B7E2FA900A30AAD /* Supporting Files */,
 			);
 			path = HSStartAppzChallenge;
@@ -96,6 +90,7 @@
 		2B4576BD1B7E2FA900A30AAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B4576CA1B7E2FA900A30AAD /* Images.xcassets */,
 				2B4576BE1B7E2FA900A30AAD /* Info.plist */,
 				2B4576BF1B7E2FA900A30AAD /* main.m */,
 			);
@@ -117,6 +112,24 @@
 				2B4576D81B7E2FA900A30AAD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B4576E51B7E338C00A30AAD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2B4576C11B7E2FA900A30AAD /* AppDelegate.h */,
+				2B4576C21B7E2FA900A30AAD /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2B4576E61B7E339800A30AAD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2B4576C41B7E2FA900A30AAD /* ViewController.h */,
+				2B4576C51B7E2FA900A30AAD /* ViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4576C91B7E2FA900A30AAD /* Main.storyboard in Resources */,
-				2B4576CE1B7E2FA900A30AAD /* LaunchScreen.xib in Resources */,
 				2B4576CB1B7E2FA900A30AAD /* Images.xcassets in Resources */,
+				2B4576E41B7E335A00A30AAD /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +254,6 @@
 			targetProxy = 2B4576D41B7E2FA900A30AAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2B4576C71B7E2FA900A30AAD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B4576C81B7E2FA900A30AAD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2B4576CC1B7E2FA900A30AAD /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B4576CD1B7E2FA900A30AAD /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2B4576DB1B7E2FA900A30AAD /* Debug */ = {
