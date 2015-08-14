@@ -7,13 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "HSFormView.h"
 
 @interface ViewController ()
 
+@property (nonatomic, readwrite) HSFormView *formView;
 @end
 
 @implementation ViewController
 
+-(void) loadView{
+    [super loadView];
+    self.view = [[HSFormView alloc] init];
+    self.formView = (HSFormView*) self.view;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

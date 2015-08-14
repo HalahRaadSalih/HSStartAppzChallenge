@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class HSFormView;
 @interface ViewController : UIViewController
 
+@property (nonatomic, readonly) HSFormView *formView;
 
 @end
 

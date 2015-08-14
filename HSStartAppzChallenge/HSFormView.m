@@ -41,7 +41,7 @@ const CGFloat TEXTFIELD_HEIGHT = 30;
     [super layoutSubviews];
     CGFloat textFieldWidth = CGRectGetWidth(self.frame) - (2 * X_PAADING);
     
-    self.usernameTextField.frame = CGRectMake(X_PAADING, Y_PAADING, textFieldWidth , TEXTFIELD_HEIGHT);
+    self.usernameTextField.frame = CGRectMake(X_PAADING, 100, textFieldWidth , TEXTFIELD_HEIGHT);
     self.passwordTextField.frame = CGRectMake(X_PAADING, CGRectGetMaxY(self.usernameTextField.frame) + Y_PAADING, textFieldWidth , TEXTFIELD_HEIGHT);
     
     self.submitButton.frame = CGRectMake(X_PAADING, CGRectGetMaxY(self.passwordTextField.frame) + 2 *Y_PAADING, textFieldWidth, TEXTFIELD_HEIGHT);
