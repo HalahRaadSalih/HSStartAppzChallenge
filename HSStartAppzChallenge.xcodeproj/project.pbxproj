@@ -16,6 +16,7 @@
 		2B4576EA1B7E556900A30AAD /* HSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576E91B7E556900A30AAD /* HSUser.m */; };
 		2B4576EE1B7E577400A30AAD /* HSUserModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576ED1B7E577400A30AAD /* HSUserModelView.m */; };
 		2B4576F21B7E5E2C00A30AAD /* HSvalidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576F11B7E5E2C00A30AAD /* HSvalidator.m */; };
+		2B4576F61B7E614300A30AAD /* UIAlertView+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576F51B7E614300A30AAD /* UIAlertView+Alerts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		2B4576ED1B7E577400A30AAD /* HSUserModelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSUserModelView.m; sourceTree = "<group>"; };
 		2B4576F01B7E5E2C00A30AAD /* HSvalidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSvalidator.h; sourceTree = "<group>"; };
 		2B4576F11B7E5E2C00A30AAD /* HSvalidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSvalidator.m; sourceTree = "<group>"; };
+		2B4576F41B7E614300A30AAD /* UIAlertView+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Alerts.h"; sourceTree = "<group>"; };
+		2B4576F51B7E614300A30AAD /* UIAlertView+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Alerts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 		2B4576F31B7E5F6700A30AAD /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2B4576F41B7E614300A30AAD /* UIAlertView+Alerts.h */,
+				2B4576F51B7E614300A30AAD /* UIAlertView+Alerts.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			files = (
 				2B4576C61B7E2FA900A30AAD /* ViewController.m in Sources */,
 				2B4576EA1B7E556900A30AAD /* HSUser.m in Sources */,
+				2B4576F61B7E614300A30AAD /* UIAlertView+Alerts.m in Sources */,
 				2B4576C31B7E2FA900A30AAD /* AppDelegate.m in Sources */,
 				2B4576F21B7E5E2C00A30AAD /* HSvalidator.m in Sources */,
 				2B4576C01B7E2FA900A30AAD /* main.m in Sources */,
