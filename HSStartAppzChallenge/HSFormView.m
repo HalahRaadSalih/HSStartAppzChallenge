@@ -52,6 +52,7 @@ const CGFloat TEXTFIELD_HEIGHT = 30;
 -(void) configureUserNameTextField{
     
     self.usernameTextField = [[UITextField alloc] init];
+    self.usernameTextField.placeholder = @"Username";
     [self addSubview:self.usernameTextField];
 }
 
@@ -59,13 +60,15 @@ const CGFloat TEXTFIELD_HEIGHT = 30;
     
     self.passwordTextField = [[UITextField alloc] init];
     self.passwordTextField.secureTextEntry = YES;
-    
+    self.passwordTextField.placeholder = @"password";
     [self addSubview:self.passwordTextField];
 }
 
 -(void) configureSubmitButton{
     
     self.submitButton = [[UIButton alloc] init];
+    [self.submitButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.submitButton setTitle:@"Submit" forState:UIControlStateNormal];
     [self addSubview:self.submitButton];
 }
 
