@@ -20,9 +20,12 @@
     [super loadView];
     self.view = [[HSFormView alloc] init];
     self.formView = (HSFormView*) self.view;
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
+    [self.formView.submitButton addTarget:self action:@selector(submitButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -31,4 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)submitButtonTapped{
+    NSLog(@"button tapped");
+}
 @end
