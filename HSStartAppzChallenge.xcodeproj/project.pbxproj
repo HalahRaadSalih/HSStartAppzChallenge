@@ -15,6 +15,7 @@
 		2B4576E41B7E335A00A30AAD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B4576E31B7E335A00A30AAD /* Default-568h@2x.png */; };
 		2B4576EA1B7E556900A30AAD /* HSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576E91B7E556900A30AAD /* HSUser.m */; };
 		2B4576EE1B7E577400A30AAD /* HSUserModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576ED1B7E577400A30AAD /* HSUserModelView.m */; };
+		2B4576F21B7E5E2C00A30AAD /* HSvalidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576F11B7E5E2C00A30AAD /* HSvalidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		2B4576E91B7E556900A30AAD /* HSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSUser.m; sourceTree = "<group>"; };
 		2B4576EC1B7E577400A30AAD /* HSUserModelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSUserModelView.h; sourceTree = "<group>"; };
 		2B4576ED1B7E577400A30AAD /* HSUserModelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSUserModelView.m; sourceTree = "<group>"; };
+		2B4576F01B7E5E2C00A30AAD /* HSvalidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSvalidator.h; sourceTree = "<group>"; };
+		2B4576F11B7E5E2C00A30AAD /* HSvalidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSvalidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 		2B4576BC1B7E2FA900A30AAD /* HSStartAppzChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				2B4576F31B7E5F6700A30AAD /* Categories */,
+				2B4576EF1B7E5E1900A30AAD /* Validator */,
 				2B4576EB1B7E575F00A30AAD /* ModelView */,
 				2B4576E71B7E555700A30AAD /* Model */,
 				2B4576E51B7E338C00A30AAD /* AppDelegate */,
@@ -156,6 +161,22 @@
 				2B4576ED1B7E577400A30AAD /* HSUserModelView.m */,
 			);
 			name = ModelView;
+			sourceTree = "<group>";
+		};
+		2B4576EF1B7E5E1900A30AAD /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				2B4576F01B7E5E2C00A30AAD /* HSvalidator.h */,
+				2B4576F11B7E5E2C00A30AAD /* HSvalidator.m */,
+			);
+			name = Validator;
+			sourceTree = "<group>";
+		};
+		2B4576F31B7E5F6700A30AAD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +281,7 @@
 				2B4576C61B7E2FA900A30AAD /* ViewController.m in Sources */,
 				2B4576EA1B7E556900A30AAD /* HSUser.m in Sources */,
 				2B4576C31B7E2FA900A30AAD /* AppDelegate.m in Sources */,
+				2B4576F21B7E5E2C00A30AAD /* HSvalidator.m in Sources */,
 				2B4576C01B7E2FA900A30AAD /* main.m in Sources */,
 				2B4576EE1B7E577400A30AAD /* HSUserModelView.m in Sources */,
 			);

@@ -10,6 +10,7 @@
 #import <XCTest/XCTest.h>
 #import "HSUser.h"
 #import "HSUserModelView.h"
+#import "HSvalidator.h"
 
 @interface HSStartAppzChallengeTests : XCTestCase
 
@@ -33,9 +34,8 @@
     HSUser *user = [[HSUser alloc] initWithUsername:@"HalahSalih" andPassword:@"123456789"];
     
     HSUserModelView *userModelView = [[HSUserModelView alloc] initWithUser:user];
+    XCTAssertTrue([HSvalidator validateText:userModelView.usernameText isAtLeast:8]);
     
-    XCTAssertGreaterThanOrEqual(userModelView.usernameText.length, 8);
-    XCTAssertGreaterThanOrEqual(userModelView.passwordText.length, 8);
 
 }
 

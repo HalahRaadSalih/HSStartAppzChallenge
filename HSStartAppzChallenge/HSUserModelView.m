@@ -7,6 +7,7 @@
 //
 
 #import "HSUserModelView.h"
+#import "HSvalidator.h"
 
 @interface HSUserModelView ()
 
@@ -23,17 +24,12 @@
     if(self){
         
         self.user = user;
-        if(self.user.username.length > 8){
-            self.usernameText = self.user.username;
-            
-            NSLog(@"user name is %@", self.usernameText);
-        }
+        self.usernameText = self.user.username;
+        self.passwordText = self.user.password;
         
-        if(self.user.password.length > 8){
-            self.passwordText = self.user.password;
-            NSLog(@"password is %@", self.passwordText);
+        NSLog(@"user name is is at least 8 characters? %d",[HSvalidator validateText:self.usernameText isAtLeast:8]);
+        NSLog(@"password is is at least 8 characters? %d",[HSvalidator validateText:self.passwordText isAtLeast:8]);
 
-        }
     }
     return self;
 }
