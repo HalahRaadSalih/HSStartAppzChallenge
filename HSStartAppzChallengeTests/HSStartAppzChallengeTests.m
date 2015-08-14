@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "HSUser.h"
+#import "HSUserModelView.h"
 
 @interface HSStartAppzChallengeTests : XCTestCase
 
@@ -28,6 +30,13 @@
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
+    HSUser *user = [[HSUser alloc] initWithUsername:@"HalahSalih" andPassword:@"123456789"];
+    
+    HSUserModelView *userModelView = [[HSUserModelView alloc] initWithUser:user];
+    
+    XCTAssertGreaterThanOrEqual(userModelView.usernameText.length, 8);
+    XCTAssertGreaterThanOrEqual(userModelView.passwordText.length, 8);
+
 }
 
 - (void)testPerformanceExample {
