@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7309A0C5-DBB9-4690-8387-5A3E5D398A16</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>HSStartAppzChallenge</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>441BB242ED5D4364BCFB915FB531C36AC80BD65D</key>
 		<string>https://github.com/HalahRaadSalih/HSStartAppzChallenge.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HSStartAppzChallenge.xcodeproj/project.xcworkspace</string>
+	<string>HSStartAppzChallenge.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>441BB242ED5D4364BCFB915FB531C36AC80BD65D</key>

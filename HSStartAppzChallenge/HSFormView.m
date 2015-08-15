@@ -72,4 +72,9 @@ const CGFloat TEXTFIELD_HEIGHT = 30;
     [self addSubview:self.submitButton];
 }
 
+-(NSDictionary*) values{
+    
+    return @{@"username": self.usernameTextField.text,
+             @"password": self.passwordTextField.text};
+}
 @end

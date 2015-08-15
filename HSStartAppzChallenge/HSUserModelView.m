@@ -27,10 +27,19 @@
         self.usernameText = self.user.username;
         self.passwordText = self.user.password;
         
-        NSLog(@"user name is is at least 8 characters? %d",[HSvalidator validateText:self.usernameText isAtLeast:8]);
-        NSLog(@"password is is at least 8 characters? %d",[HSvalidator validateText:self.passwordText isAtLeast:8]);
 
     }
     return self;
 }
+
+-(BOOL) isuserNameValid{
+    
+    return [HSvalidator validateText:self.usernameText isAtLeast:8];
+}
+
+-(BOOL) isPasswordValid{
+    
+    return [HSvalidator validateText:self.passwordText isAtLeast:8];
+}
+
 @end

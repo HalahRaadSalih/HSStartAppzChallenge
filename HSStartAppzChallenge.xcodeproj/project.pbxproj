@@ -20,6 +20,8 @@
 		2B4576FA1B7E622900A30AAD /* HSFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576F91B7E622900A30AAD /* HSFormView.m */; };
 		2B4576FD1B7E71AA00A30AAD /* HSAnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4576FC1B7E71AA00A30AAD /* HSAnotherViewController.m */; };
 		2B4577031B7E725A00A30AAD /* HSSomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4577021B7E725A00A30AAD /* HSSomeView.m */; };
+		2B67D1681B7F7C9A0024ADF4 /* UIImage+TextWriting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B67D1671B7F7C9A0024ADF4 /* UIImage+TextWriting.m */; };
+		2B67D16A1B7F83B70024ADF4 /* tumblr_nrg4jiZM671twh2h7o1_500.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B67D1691B7F83B70024ADF4 /* tumblr_nrg4jiZM671twh2h7o1_500.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		2B4576FC1B7E71AA00A30AAD /* HSAnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSAnotherViewController.m; sourceTree = "<group>"; };
 		2B4577011B7E725A00A30AAD /* HSSomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSomeView.h; sourceTree = "<group>"; };
 		2B4577021B7E725A00A30AAD /* HSSomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSomeView.m; sourceTree = "<group>"; };
+		2B67D1661B7F7C9A0024ADF4 /* UIImage+TextWriting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TextWriting.h"; sourceTree = "<group>"; };
+		2B67D1671B7F7C9A0024ADF4 /* UIImage+TextWriting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TextWriting.m"; sourceTree = "<group>"; };
+		2B67D1691B7F83B70024ADF4 /* tumblr_nrg4jiZM671twh2h7o1_500.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tumblr_nrg4jiZM671twh2h7o1_500.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				2B4576CA1B7E2FA900A30AAD /* Images.xcassets */,
+				2B67D1691B7F83B70024ADF4 /* tumblr_nrg4jiZM671twh2h7o1_500.jpg */,
 				2B4576BE1B7E2FA900A30AAD /* Info.plist */,
 				2B4576BF1B7E2FA900A30AAD /* main.m */,
 			);
@@ -192,6 +198,8 @@
 			children = (
 				2B4576F41B7E614300A30AAD /* UIAlertView+Alerts.h */,
 				2B4576F51B7E614300A30AAD /* UIAlertView+Alerts.m */,
+				2B67D1661B7F7C9A0024ADF4 /* UIImage+TextWriting.h */,
+				2B67D1671B7F7C9A0024ADF4 /* UIImage+TextWriting.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B67D16A1B7F83B70024ADF4 /* tumblr_nrg4jiZM671twh2h7o1_500.jpg in Resources */,
 				2B4576CB1B7E2FA900A30AAD /* Images.xcassets in Resources */,
 				2B4576E41B7E335A00A30AAD /* Default-568h@2x.png in Resources */,
 			);
@@ -310,6 +319,7 @@
 				2B4576FA1B7E622900A30AAD /* HSFormView.m in Sources */,
 				2B4576EA1B7E556900A30AAD /* HSUser.m in Sources */,
 				2B4576F61B7E614300A30AAD /* UIAlertView+Alerts.m in Sources */,
+				2B67D1681B7F7C9A0024ADF4 /* UIImage+TextWriting.m in Sources */,
 				2B4576C31B7E2FA900A30AAD /* AppDelegate.m in Sources */,
 				2B4577031B7E725A00A30AAD /* HSSomeView.m in Sources */,
 				2B4576F21B7E5E2C00A30AAD /* HSvalidator.m in Sources */,
@@ -491,6 +501,7 @@
 				2B4576DF1B7E2FA900A30AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B4576E01B7E2FA900A30AAD /* Build configuration list for PBXNativeTarget "HSStartAppzChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +510,7 @@
 				2B4576E21B7E2FA900A30AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

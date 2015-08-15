@@ -9,6 +9,7 @@
 #import "HSAnotherViewController.h"
 #import "HSSomeView.h"
 #import "UIAlertView+Alerts.h"
+#import "UIImage+TextWriting.h"
 
 @interface HSAnotherViewController ()
 
@@ -30,10 +31,13 @@
     [super viewDidLoad];
     self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHandler:)];
     [self.someView.imageView addGestureRecognizer:self.tapGestureRecognizer];
+    [self.someView.imageView setImage:[UIImage imageNamed:@"test.jpg"]];
 }
 
 -(void) tapHandler:(UITapGestureRecognizer*) recognizer{
     
-    [UIAlertView showAlertWithTitle:@"" message:@"HelloWorld" cancelButtonTitle:@"Ok"];
+    [self.someView.imageView setImage:[UIImage writetText:@"Hello World" onImage:self.someView.imageView.image atPoint:self.someView.center]];
+    [self.someView.imageView setImage:[UIImage writetText:@"2864246" onImage:self.someView.imageView.image atPoint:CGPointMake(10, 10)]];
+
 }
 @end

@@ -14,5 +14,6 @@
 @property (nonatomic, readonly) UITextField *passwordTextField;
 
 @property (nonatomic, readonly) UIButton *submitButton;
+@property (nonatomic, strong) NSDictionary *values;
 
 @end
