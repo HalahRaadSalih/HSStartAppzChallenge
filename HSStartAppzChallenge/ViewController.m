@@ -40,15 +40,21 @@
     
     HSUser *user = [[HSUser alloc] initWithUsername:self.formView.usernameTextField.text
                                         andPassword:self.formView.passwordTextField.text];
+    
     HSUserModelView *userModelView = [[HSUserModelView alloc] initWithUser:user];
     
   
     if(userModelView.isValid){
         
-        HSAnotherViewController *anotherViewController = [[HSAnotherViewController alloc] init];
-        [self.navigationController pushViewController:anotherViewController animated:NO];
+        [self openSomeViewController];
     }
     
 }
 
+-(void) openSomeViewController{
+    
+    HSAnotherViewController *anotherViewController = [[HSAnotherViewController alloc] init];
+    [self presentViewController:anotherViewController animated:NO completion:nil];
+
+}
 @end
