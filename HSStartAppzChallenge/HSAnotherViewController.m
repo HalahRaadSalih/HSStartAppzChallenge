@@ -36,8 +36,8 @@
 
 -(void) tapHandler:(UITapGestureRecognizer*) recognizer{
     
-    [self.someView.imageView setImage:[UIImage writetText:@"Hello World" onImage:self.someView.imageView.image atPoint:self.someView.center]];
-    [self.someView.imageView setImage:[UIImage writetText:@"2864246" onImage:self.someView.imageView.image atPoint:CGPointMake(10, 10)]];
+    [self.someView.imageView setImage:[UIImage writetText:@"Hello World" onImage:self.someView.imageView.image
+                                                  atPoint:self.someView.center]];
 
 }
 @end

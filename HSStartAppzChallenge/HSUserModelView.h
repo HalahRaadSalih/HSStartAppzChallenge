@@ -17,6 +17,8 @@
 @property (nonatomic, readonly) NSString *passwordText;
 @property (nonatomic, readonly) HSUser *user;
 
+@property (nonatomic) BOOL isValid;
+
 -(BOOL) isuserNameValid;
 -(BOOL) isPasswordValid;
 @end

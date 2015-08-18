@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "HSFormView.h"
 #import "HSAnotherViewController.h"
+#import "HSUserModelView.h"
+#import "HSUser.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, readwrite) HSFormView *formView;
 @end
@@ -25,13 +27,28 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.formView.submitButton addTarget:self action:@selector(submitButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    [self.formView.submitButton addTarget:self
+                                   action:@selector(submitButtonTapped)
+                         forControlEvents:UIControlEventTouchUpInside];
+    
+    self.formView.usernameTextField.delegate = self;
+    self.formView.passwordTextField.delegate = self;
 }
 
 
 -(void)submitButtonTapped{
-
-    HSAnotherViewController *anotherViewController = [[HSAnotherViewController alloc] init];
-    [self.navigationController pushViewController:anotherViewController animated:NO];
+    
+    HSUser *user = [[HSUser alloc] initWithUsername:self.formView.usernameTextField.text
+                                        andPassword:self.formView.passwordTextField.text];
+    HSUserModelView *userModelView = [[HSUserModelView alloc] initWithUser:user];
+    
+  
+    if(userModelView.isValid){
+        
+        HSAnotherViewController *anotherViewController = [[HSAnotherViewController alloc] init];
+        [self.navigationController pushViewController:anotherViewController animated:NO];
+    }
+    
 }
+
 @end
